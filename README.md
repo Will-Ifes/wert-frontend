@@ -1,16 +1,12 @@
 # WERT · interface de gestão
 
-Interface de um projeto SaaS de gestão com áreas de usuários, produtos e inventário. Construída com **Next.js 14, React 18, TypeScript e Tailwind CSS**.
+Cadastros, produtos e operações de estoque em uma interface administrativa.
 
-[API do projeto](https://github.com/Will-Ifes/wert-backend) · [Perfil do autor](https://github.com/Will-Ifes)
+**Next.js · React · TypeScript · Tailwind CSS**
 
-## Contexto e participação
+[Backend](https://github.com/Will-Ifes/wert-backend) · [Código](src) · [Execução](#executar)
 
-Trabalho desenvolvido por Will Oliveira no projeto WERT, com colaboração registrada no projeto original. Esta edição de portfólio reúne uma cópia revisada do código com histórico novo; não reproduz o histórico de commits do desenvolvimento original.
-
-O desafio da interface é organizar cadastros e operações de estoque em telas compreensíveis, conectadas às regras da API.
-
-## Escopo presente
+## O projeto
 
 | Área | Conteúdo versionado |
 | --- | --- |
@@ -21,7 +17,10 @@ O desafio da interface é organizar cadastros e operações de estoque em telas 
 | Navegação | Header, sidebar e componentes de proteção de rotas |
 | UI | Formulários, tabelas, diálogos, alertas e feedback |
 
-## Arquitetura
+<details>
+<summary><strong>Arquitetura e caminhos de leitura</strong></summary>
+
+### Arquitetura
 
 | Caminho | Responsabilidade |
 | --- | --- |
@@ -33,14 +32,19 @@ O desafio da interface é organizar cadastros e operações de estoque em telas 
 
 A UI utiliza Radix e utilitários de composição de classes. Formulários usam React Hook Form e Zod. Os componentes de proteção da interface ajudam na navegação, mas a autorização dos dados precisa ser garantida pela API.
 
-## Por dentro do código
+### Por dentro do código
 
 - [Organização do inventário em abas](src/app/inventory/page.tsx).
 - [Integração com os endpoints de usuários](src/actions/user.ts).
 - [Contrato de login e geração de token](src/app/(auth)/login/validation/route.ts).
 - [Componentes de produtos](src/app/products/components).
 
-## Executar localmente
+</details>
+
+<a id="executar"></a>
+
+<details>
+<summary><strong>Executar e validar</strong></summary>
 
 Requer Node.js, pnpm e a API configurada. Use as versões de dependências registradas no lockfile.
 
@@ -55,7 +59,7 @@ Antes de iniciar, configure `NEXT_PUBLIC_BACKEND_URL` em `.env.local` com a URL 
 
 A interface usa a porta padrão 3000. Para o backend atual em HTTPS, configure certificados confiáveis no seu ambiente.
 
-## Qualidade e comandos
+### Comandos
 
 | Comando | Finalidade |
 | --- | --- |
@@ -67,17 +71,29 @@ A interface usa a porta padrão 3000. Para o backend atual em HTTPS, configure c
 
 Não há suíte de testes automatizados versionada nesta edição. Os comandos foram conferidos no manifesto; esta documentação não declara build validada ou aplicação pronta para produção.
 
-## Evolução
+</details>
+
+<details>
+<summary><strong>Contexto, evolução e uso</strong></summary>
+
+Trabalho desenvolvido por Will Oliveira no projeto WERT, com colaboração registrada no projeto original. Esta edição de portfólio reúne uma cópia revisada do código com histórico novo; não reproduz o histórico de commits do desenvolvimento original.
+
+### Evolução
 
 - Consolidar a configuração dos endpoints.
 - Rever contratos e estados de erro dos formulários.
 - Adicionar testes dos fluxos de autenticação e estoque.
 - Verificar autorização no backend, acessibilidade e comportamento em telas menores.
 
-## Procedência e uso
+### Procedência
 
 Esta cópia foi criada para apresentar o trabalho, removendo arquivos e dados locais do projeto original. A licença de uso do frontend não está definida em um arquivo de licença; consulte o autor para reutilização.
 
----
 
 Mantido por **Will Oliveira** · [Perfil](https://github.com/Will-Ifes) · [LinkedIn](https://www.linkedin.com/in/wildemberg-de-jesus-oliveira/)
+
+</details>
+
+---
+
+**Will Oliveira** · [LinkedIn](https://www.linkedin.com/in/wildemberg-de-jesus-oliveira/) · [GitHub](https://github.com/Will-Ifes)
