@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./.github/readme-cover.svg" alt="WERT | gestão na interface: Produtos, pessoas e operações de estoque." width="100%" />
+</p>
+
 # WERT · interface de gestão
 
 Cadastros, produtos e operações de estoque em uma interface administrativa.
@@ -5,6 +9,13 @@ Cadastros, produtos e operações de estoque em uma interface administrativa.
 **Next.js · React · TypeScript · Tailwind CSS**
 
 [Backend](https://github.com/Will-Ifes/wert-backend) · [Código](src) · [Execução](#executar)
+
+## Explore o diferencial
+
+| Ponto de entrada | O que observar |
+| --- | --- |
+| [Fluxos administrativos](src/app/inventory/page.tsx) | As abas separam consulta, entradas, saídas e movimentações de estoque. |
+| [Reutilização na UI](src/components/ui) | Primitivas compartilhadas apoiam formulários, tabelas e diálogos. |
 
 ## O projeto
 
@@ -88,7 +99,6 @@ Trabalho desenvolvido por Will Oliveira no projeto WERT, com colaboração regis
 ### Procedência
 
 Esta cópia foi criada para apresentar o trabalho, removendo arquivos e dados locais do projeto original. A licença de uso do frontend não está definida em um arquivo de licença; consulte o autor para reutilização.
-
 
 Mantido por **Will Oliveira** · [Perfil](https://github.com/Will-Ifes) · [LinkedIn](https://www.linkedin.com/in/wildemberg-de-jesus-oliveira/)
 
